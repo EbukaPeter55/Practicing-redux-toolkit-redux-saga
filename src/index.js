@@ -5,10 +5,14 @@ import App from './App';
 import { Provider } from 'react-redux';
 import createSagaMiddleware from 'redux-saga';
 import { configureStore } from '@reduxjs/toolkit';
+import catsReducer from './catState';
+
 
 const saga = createSagaMiddleware();
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    cats: catsReducer
+  },
   middleware: [saga]
 });
 
