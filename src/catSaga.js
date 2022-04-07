@@ -1,4 +1,4 @@
-import { call, put, takeEvery } from 'reduxSaga/effects';
+import { call, put, takeEvery } from 'redux-saga/effects'
 import { getCatsSuccess} from './catState';
 
 function* workGetCatsFetch(){
